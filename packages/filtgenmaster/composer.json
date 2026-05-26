@@ -1,0 +1,18 @@
+{
+	"name": "filtgen/filtgenmaster",
+	"description": "Sitepackage for TYPO3 13",
+	"type": "typo3-cms-extension",
+	"license": "GPL-2.0-or-later",
+	"authors": [{
+		"name": "Felix Iltgen",
+		"email": "filtgen@filtgen.de"
+	}],
+	"require": {
+		"typo3/cms-core": "^13.4"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "filtgenmaster"
+		}
+	}
+}

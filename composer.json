@@ -36,12 +36,18 @@
         "typo3/cms-viewpage": "^13.4",
         "typo3/cms-webhooks": "^13.4",
         "typo3/cms-workspaces": "^13.4",
-        "typo3/minimal": "^13"
+        "typo3/minimal": "^13",
+        "filtgen/filtgenmaster": "@dev"
     },
     "config": {
         "allow-plugins": {
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
         }
-    }
+    },
+    "repositories": [{
+        "name": "local",
+        "type": "path",
+        "url": "./packages/*"
+    }]
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2bf5b62b84fd7bc2a4c167dbf7e359c",
+    "content-hash": "d158cce3fa329a7803a8f6232e09d2f5",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -750,6 +750,37 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.22.0"
             },
             "time": "2025-08-12T10:13:48+00:00"
+        },
+        {
+            "name": "filtgen/filtgenmaster",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/filtgenmaster",
+                "reference": "2fc652cd6a09296a7d3f2f0f4483a29571b11dda"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "filtgenmaster"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Iltgen",
+                    "email": "filtgen@filtgen.de"
+                }
+            ],
+            "description": "Sitepackage for TYPO3 13",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "firebase/php-jwt",
@@ -7686,7 +7717,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "filtgen/filtgenmaster": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

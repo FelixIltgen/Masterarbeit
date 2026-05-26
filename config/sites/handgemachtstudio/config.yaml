@@ -1,0 +1,14 @@
+base: 'https://masterarbeit.ddev.site/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE.utf8
+    navigationTitle: DE
+    flag: de
+    hreflang: de-DE
+    websiteTitle: 'Handgemacht Studio'
+rootPageId: 1
+websiteTitle: 'Handgemacht Studio'
