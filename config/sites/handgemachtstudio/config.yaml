@@ -1,4 +1,6 @@
 base: 'https://masterarbeit.ddev.site/'
+dependencies:
+  - ffiltgen/filtgenmaster
 languages:
   -
     title: Deutsch
