@@ -12,6 +12,15 @@ page {
            <link href="{path:EXT:filtgenmaster/Resources/Public/assets/icon-hell.svg}" rel="icon">
         )
         10.insertData = 1
+
+    }
+    includeCSS{
+        landing = EXT:filtgenmaster/Resources/Public/styles/landing.css
+    }
+
+    includeJSFooter{
+        site = EXT:filtgenmaster/Resources/Public/scripts/site.js
+        page = EXT:filtgenmaster/Resources/Public/scripts/page-landing.js
     }
 
      10 = PAGEVIEW
@@ -19,5 +28,18 @@ page {
           paths {
                100 = EXT:filtgenmaster/Resources/Private/Templates/
           }
+
+        variables {
+            content0 = CONTENT
+            content0 {
+                table = tt_content
+                select {
+                    where = {#colPos} = 0
+                    orderBy = sorting
+                }
+            }
+        }
+
+
      }
 }
