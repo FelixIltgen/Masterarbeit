@@ -1,3 +1,13 @@
 page = PAGE
-page.10 = TEXT
-page.10.value = Hello World!
+page {
+    meta{
+        viewport = width=device-width, initial-scale=1.0
+        description = Kuratierte Handwerk-Abende für Anfänger in Baden-Württemberg. Töpfern, Holz, Lederwerk, Druck und mehr. Du nimmst dein Werk mit nach Hause.
+        }
+     10 = PAGEVIEW
+     10 {
+          paths {
+               100 = EXT:filtgenmaster/Resources/Private/Templates/
+          }
+     }
+}
