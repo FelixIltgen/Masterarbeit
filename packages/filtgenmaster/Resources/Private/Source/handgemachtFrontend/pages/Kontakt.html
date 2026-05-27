@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Kontakt — Handgemacht Studio</title>
+  <meta name="description" content="Schreib Handgemacht Studio — Fragen, Firmen-Events, Gutscheine. Wir melden uns innerhalb von 24 Stunden zurück."/>
+  <link rel="stylesheet" href="../styles/landing.css"/>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="../index.html" aria-label="Handgemacht Studio · Zur Startseite">
+        <img src="../assets/logo-hell.svg" class="site-header__logo" alt="Handgemacht Studio"/>
+      </a>
+      <nav class="site-header__nav" aria-label="Hauptnavigation">
+        <a href="../index.html" class="site-header__link">Start</a>
+        <a href="Events.html" class="site-header__link">Events</a>
+        <a href="Über uns.html" class="site-header__link">Über uns</a>
+        <a href="FAQ.html" class="site-header__link">FAQ</a>
+        <a href="Kontakt.html" class="site-header__link site-header__link--active">Kontakt</a>
+      </nav>
+      <a class="site-header__cta" href="Events.html">Events buchen</a>
+      <button class="site-header__burger" id="burger-btn" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="site-header__mobile" id="mobile-menu" aria-hidden="true">
+  <nav class="site-header__mobile-nav" aria-label="Mobile Navigation">
+    <a href="../index.html" class="site-header__mobile-link">Start</a>
+    <a href="Events.html" class="site-header__mobile-link">Events</a>
+    <a href="Über uns.html" class="site-header__mobile-link">Über uns</a>
+    <a href="FAQ.html" class="site-header__mobile-link">FAQ</a>
+    <a href="Kontakt.html" class="site-header__mobile-link site-header__mobile-link--active">Kontakt</a>
+    <a class="btn btn--primary site-header__mobile-cta" href="Events.html">
+      Events buchen
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+</div>
+
+<main class="page">
+
+  <!-- Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <div class="overline" style="margin-bottom:20px">
+        <span class="lehm-line lehm-line--lg"></span>
+        Kontakt
+      </div>
+      <h1 class="subpage-hero__title">Schreib uns.</h1>
+      <p class="subpage-hero__body">
+        Fragen, Wünsche, Firmen-Events oder Gutscheine? Wir melden uns innerhalb von
+        24 Stunden zurück — meist deutlich schneller.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact form + sidebar -->
+  <section class="section contact-page__section">
+    <div class="container">
+      <div class="contact-page__layout">
+
+        <!-- Contact form -->
+        <div id="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="overline contact-form__overline">
+              <span class="lehm-line"></span>
+              Schreib uns
+            </div>
+            <h2 class="contact-form__title">Nachricht senden.</h2>
+            <p class="contact-form__sub">
+              Füll das Formular aus — wir melden uns meist innerhalb von 24 Stunden zurück.
+              Felder mit * sind erforderlich.
+            </p>
+
+            <div class="contact-form__grid">
+              <div class="field">
+                <label class="field__label" for="c-name">Name *</label>
+                <input id="c-name" class="field__input" type="text" placeholder="Anna Müller" autocomplete="name"/>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-email">E-Mail *</label>
+                <input id="c-email" class="field__input" type="email" placeholder="anna@beispiel.de" autocomplete="email"/>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-phone">
+                  Telefon <span class="opt">— optional</span>
+                </label>
+                <input id="c-phone" class="field__input" type="tel" placeholder="+49 ..." autocomplete="tel"/>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-topic">Worum geht's?</label>
+                <select id="c-topic" class="field__select">
+                  <option>Allgemeine Frage</option>
+                  <option>Event-Buchung oder Frage zu einem Event</option>
+                  <option>Firmen-Event oder private Gruppe</option>
+                  <option>Gutschein</option>
+                  <option>Presse-Anfrage</option>
+                  <option>Sonstiges</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label class="field__label" for="c-message">Nachricht *</label>
+                <textarea id="c-message" class="field__textarea" placeholder="Schreib uns, was dich interessiert. Wenn es um einen bestimmten Event geht, gib gern den Titel oder das Datum mit an."></textarea>
+              </div>
+              <label class="contact-form__consent">
+                <input type="checkbox" id="c-consent"/>
+                <span>
+                  Ich willige in die Verarbeitung meiner Angaben zur Beantwortung meiner Anfrage ein.
+                  Details in der <a href="#">Datenschutzerklärung</a>.
+                </span>
+              </label>
+              <div class="contact-form__submit-row">
+                <button class="btn btn--primary" type="submit">
+                  Nachricht senden
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <span class="small">Wir antworten innerhalb von 24 Stunden.</span>
+              </div>
+              <div id="form-errors" class="field--full" style="display:none;margin-top:8px;color:#8a4628;font-size:13px;font-family:var(--font-sans)"></div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="contact-sidebar">
+          <div class="contact-card">
+            <h3>
+              <span class="lehm-line" style="width:20px"></span>
+              Direkter Draht
+            </h3>
+            <div class="contact-card__row">
+              <div class="contact-card__row-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+              </div>
+              <div>
+                <div class="contact-card__row-label">E-Mail</div>
+                <div class="contact-card__row-value"><a href="mailto:hallo@handgemacht-studio.de">hallo@handgemacht-studio.de</a></div>
+              </div>
+            </div>
+            <div class="contact-card__row">
+              <div class="contact-card__row-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card__row-label">Telefon</div>
+                <div class="contact-card__row-value">
+                  <a href="tel:+497611234567">+49 761 1234 567</a>
+                  <div style="font-size:12px;color:var(--fg-2);margin-top:2px">Mo–Fr · 10:00–17:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card__row">
+              <div class="contact-card__row-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div>
+                <div class="contact-card__row-label">Werkstätten</div>
+                <div class="contact-card__row-value">
+                  Lehmweg 4 · 79098 Freiburg<br>
+                  Werkhof am Bach · 79336 Herbolzheim
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card contact-card--dark">
+            <span class="lehm-line" style="display:block;margin-bottom:14px"></span>
+            <p class="contact-card__quote">„Wir lesen jede Nachricht — keine Bots, keine Auto-Reply."</p>
+            <p>Mona &amp; das Studio-Team</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <span class="site-footer__lehm"></span>
+          <img src="../assets/logo-dunkel.svg" alt="Handgemacht Studio"/>
+          <p class="site-footer__claim">Das hab ich selbst gemacht.</p>
+          <div class="site-footer__social" aria-label="Soziale Netzwerke">
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.5 2.5 4.5 5 5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h-2.5A3.5 3.5 0 0 0 10 7.5V10H8v3h2v8h3v-8h2.5l.5-3H13V8c0-.5.5-1 1-1h2V4z"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Entdecken</h4><ul><li><a href="Events.html">Alle Events</a></li></ul></div>
+        <div><h4>Studios</h4><ul><li><a href="Über uns.html">Freiburg</a></li><li><a href="Über uns.html">Herbolzheim</a></li></ul></div>
+        <div><h4>Studio</h4><ul><li><a href="../index.html">Start</a></li><li><a href="Events.html">Events</a></li><li><a href="Über uns.html">Über uns</a></li><li><a href="FAQ.html">FAQ</a></li><li><a href="Kontakt.html">Kontakt</a></li></ul></div>
+        <div><h4>Kontakt</h4>
+          <div class="site-footer__contact">
+            <div class="site-footer__contact-row"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Lehmweg 4<br>79098 Freiburg i. Br.</span></div>
+            <div class="site-footer__contact-row"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg><a href="mailto:hallo@handgemacht-studio.de">hallo@handgemacht-studio.de</a></div>
+            <div class="site-footer__contact-row"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+497611234567">+49 761 1234 567</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div>© 2026 Handgemacht Studio · Baden-Württemberg</div>
+        <div class="site-footer__bottom-links"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">AGB</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+</main><!-- /.page -->
+
+<script src="../scripts/site.js"></script>
+<script src="../scripts/page-kontakt.js"></script>
+</body>
+</html>

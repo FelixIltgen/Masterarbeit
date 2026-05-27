@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Handgemacht Studio — DIY Craft Events in Baden-Württemberg</title>
+  <meta name="description" content="Kuratierte Handwerk-Abende für Anfänger in Baden-Württemberg. Töpfern, Holz, Lederwerk, Druck und mehr. Du nimmst dein Werk mit nach Hause."/>
+  <link rel="stylesheet" href="styles/landing.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     STICKY HEADER
+     ============================================================ -->
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="index.html" aria-label="Handgemacht Studio · Zur Startseite">
+        <img src="assets/logo-hell.svg" class="site-header__logo" alt="Handgemacht Studio"/>
+      </a>
+      <nav class="site-header__nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="site-header__link site-header__link--active">Start</a>
+        <a href="pages/Events.html" class="site-header__link">Events</a>
+        <a href="pages/Über uns.html" class="site-header__link">Über uns</a>
+        <a href="pages/FAQ.html" class="site-header__link">FAQ</a>
+        <a href="pages/Kontakt.html" class="site-header__link">Kontakt</a>
+      </nav>
+      <a class="site-header__cta" href="pages/Events.html">Events buchen</a>
+      <button class="site-header__burger" id="burger-btn" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer — outside .page so overflow-x:clip cannot clip it -->
+<div class="site-header__mobile" id="mobile-menu" aria-hidden="true">
+  <nav class="site-header__mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html" class="site-header__mobile-link site-header__mobile-link--active">Start</a>
+    <a href="pages/Events.html" class="site-header__mobile-link">Events</a>
+    <a href="pages/Über uns.html" class="site-header__mobile-link">Über uns</a>
+    <a href="pages/FAQ.html" class="site-header__mobile-link">FAQ</a>
+    <a href="pages/Kontakt.html" class="site-header__mobile-link">Kontakt</a>
+    <a class="btn btn--primary site-header__mobile-cta" href="pages/Events.html">
+      Events buchen
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+</div>
+
+<main class="page">
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero__grid">
+
+        <!-- Left — text -->
+        <div class="hero__text">
+          <div class="hero__overline overline">
+            <span class="lehm-line lehm-line--lg"></span>
+            DIY Craft Events · Baden-Württemberg
+          </div>
+          <h1 class="hero__title">
+            Das hab ich <em>selbst</em><br>gemacht.
+          </h1>
+          <p class="hero__sub">
+            Kuratierte Handwerk-Abende für Anfänger. Du kommst nach der Arbeit, arbeitest mit echten Materialien an erfahrenen Werkbänken und nimmst dein Werk mit nach Hause. Mehr nicht.
+          </p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="pages/Events.html">
+              Events ansehen
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button class="btn btn--secondary" id="scroll-to-versprechen">So funktioniert's</button>
+            <span class="meta">
+              <span class="dot"></span>
+              Nächster Event: Sa, 14. Juni · Freiburg
+            </span>
+          </div>
+        </div>
+
+        <!-- Right — visual -->
+        <div class="hero__visual">
+          <img src="assets/icon-hell.svg" alt="Handgemacht Studio Monogramm" class="hero__visual-icon"/>
+        </div>
+
+      </div>
+
+      <!-- Stat strip -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="n"><em>6</em> Events</div>
+          <div class="t">Diesen Monat</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n"><em>2</em> Standorte</div>
+          <div class="t">Freiburg &amp; Herbolzheim</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n">Max <em>8</em></div>
+          <div class="t">Personen pro Event</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n">100&thinsp;%</div>
+          <div class="t">Material inklusive</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — USP / VERSPRECHEN
+       ============================================================ -->
+  <section class="section" id="versprechen">
+    <div class="container">
+      <div class="usp__grid">
+
+        <!-- Left — intro -->
+        <div class="usp__intro">
+          <div class="overline" style="margin-bottom:22px">
+            <span class="lehm-line"></span>
+            Unser Versprechen
+          </div>
+          <h2 class="usp__title">Kuratiert statt überwältigend.</h2>
+          <p class="usp__sub">
+            Wir bringen Menschen zusammen, die etwas mit ihren Händen erschaffen wollen — und begleiten sie dabei, stolz auf das zu sein, was sie selbst gemacht haben.
+          </p>
+          <div class="usp__cta-block">
+            <span class="lehm-line"></span>
+            <h3>Mehr über unsere Philosophie.</h3>
+            <p>Erfahre, warum „selbst gemacht" mehr ist als ein Marketing-Versprechen — und wie wir Events kuratieren.</p>
+            <a class="btn btn--light" href="pages/Über uns.html" style="align-self:flex-start;margin-top:6px">
+              Über uns lesen
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right — bullets -->
+        <div class="usp__bullets">
+          <div class="usp__bullet">
+            <div class="usp__bullet-num">01</div>
+            <div>
+              <h3 class="usp__bullet-title">Eigenhändig — kein Halbfertiges</h3>
+              <p class="usp__bullet-body">Kein vorgefertigtes Kit. Du sitzt an echten Werkzeugen, formst, schneidest und druckst mit deinen eigenen Händen.</p>
+            </div>
+          </div>
+          <div class="usp__bullet">
+            <div class="usp__bullet-num">02</div>
+            <div>
+              <h3 class="usp__bullet-title">Du nimmst dein Werk mit</h3>
+              <p class="usp__bullet-body">Am Ende des Abends hältst du dein eigenes, fertiges Werk in den Händen — keine Demo, kein Halbfertiges.</p>
+            </div>
+          </div>
+          <div class="usp__bullet">
+            <div class="usp__bullet-num">03</div>
+            <div>
+              <h3 class="usp__bullet-title">Kleine Gruppen, erfahrene Guides</h3>
+              <p class="usp__bullet-body">Maximal 8 Personen pro Event. Kuratierte Materialien, klarer Ablauf, persönliche Anleitung.</p>
+            </div>
+          </div>
+          <div class="usp__bullet">
+            <div class="usp__bullet-num">04</div>
+            <div>
+              <h3 class="usp__bullet-title">Lokal in Baden-Württemberg</h3>
+              <p class="usp__bullet-body">Werkstätten in Freiburg und Herbolzheim. Echte Orte, echte Menschen — keine anonymen Eventhallen.</p>
+            </div>
+          </div>
+          <div class="usp__bullet">
+            <div class="usp__bullet-num">05</div>
+            <div>
+              <h3 class="usp__bullet-title">Keine Vorkenntnisse nötig</h3>
+              <p class="usp__bullet-body">Anfänger sind die Regel. Du brauchst nur Neugier — wir kümmern uns um den Rest.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — EVENTS (first 3)
+       ============================================================ -->
+  <section class="section section--alt" id="events">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__left">
+          <div class="overline section-head__overline">
+            <span class="lehm-line"></span>
+            Kommende Events
+          </div>
+          <h2 class="section-head__title">Diesen Monat in Baden-Württemberg.</h2>
+          <p class="section-head__sub">Kleine Gruppen. Erfahrene Guides. Materialien sind inklusive — du brauchst nichts mitzubringen.</p>
+        </div>
+        <a href="pages/Events.html" class="section-head__link">
+          Alle Events ansehen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="events-grid" id="landing-events"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — TESTIMONIALS (dark)
+       ============================================================ -->
+  <section class="section section--dark section--testimonials" id="stimmen">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:28px">
+        <div class="section-head__left" style="margin:0 auto;text-align:center;max-width:none">
+          <div class="overline section-head__overline" style="justify-content:center;margin-bottom:10px">
+            <span class="lehm-line"></span>
+            Stimmen aus den Studios
+            <span class="lehm-line"></span>
+          </div>
+          <h2 class="section-head__title" style="font-size:28px">Was unsere Teilnehmer sagen.</h2>
+        </div>
+      </div>
+
+      <div class="testimonial" id="testimonial-slide"></div>
+
+      <div class="testimonial__nav">
+        <button class="testimonial__arrow" id="t-prev" aria-label="Vorheriges Zitat">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="testimonial__dots" id="t-dots"></div>
+        <button class="testimonial__arrow" id="t-next" aria-label="Nächstes Zitat">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — ABOUT / STUDIO
+       ============================================================ -->
+  <section class="section" id="studio">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Left — text -->
+        <div>
+          <div class="overline about__overline">
+            <span class="lehm-line"></span>
+            Über Handgemacht Studio
+          </div>
+          <h2 class="about__title">Eine Werkstatt, kein Workshop.</h2>
+          <p class="about__sub">
+            Gegründet 2024 in Freiburg — heute mit Werkstätten in Freiburg und Herbolzheim. Wir sind keine Volkshochschule und kein Designstudio. Wir sind das, was dazwischen fehlt.
+          </p>
+          <p class="about__info">
+            Jeder Event wird von einer erfahrenen Handwerkerin oder einem Handwerker begleitet. Wir wählen die Materialien selbst aus — regional, hochwertig, unaufgeregt. Der Raum ist klein gehalten, damit jeder gesehen wird. Am Ende des Abends nimmst du etwas mit, das du am nächsten Morgen noch ansehen kannst.
+          </p>
+          <div class="about__signoff">
+            <span class="lehm-line"></span>
+            <span>Mona &amp; das Studio-Team</span>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a class="btn btn--primary" href="pages/Über uns.html">
+              Studios entdecken
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="pages/Kontakt.html">
+              Presse-Anfragen
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right — visual + floating card -->
+        <div style="position:relative">
+          <div class="about__visual" aria-label="Werkstatt-Detail">
+            <div class="about__visual-inner"></div>
+            <div class="about__visual-tag">
+              <p class="where">Werkhof am Bach</p>
+              <p class="who">Herbolzheim · Holzwerkstatt</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="n">2</div>
+            <div class="t">Werkstätten in BW</div>
+            <div class="b">Freiburg · Herbolzheim</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <span class="site-footer__lehm"></span>
+          <img src="assets/logo-dunkel.svg" alt="Handgemacht Studio"/>
+          <p class="site-footer__claim">Das hab ich selbst gemacht.</p>
+          <div class="site-footer__social" aria-label="Soziale Netzwerke">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.5 2.5 4.5 5 5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h-2.5A3.5 3.5 0 0 0 10 7.5V10H8v3h2v8h3v-8h2.5l.5-3H13V8c0-.5.5-1 1-1h2V4z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Entdecken</h4>
+          <ul><li><a href="pages/Events.html">Alle Events</a></li></ul>
+        </div>
+
+        <div>
+          <h4>Studios</h4>
+          <ul>
+            <li><a href="pages/Über uns.html">Freiburg</a></li>
+            <li><a href="pages/Über uns.html">Herbolzheim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="pages/Events.html">Events</a></li>
+            <li><a href="pages/Über uns.html">Über uns</a></li>
+            <li><a href="pages/FAQ.html">FAQ</a></li>
+            <li><a href="pages/Kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <div class="site-footer__contact">
+            <div class="site-footer__contact-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Lehmweg 4<br>79098 Freiburg i. Br.</span>
+            </div>
+            <div class="site-footer__contact-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+              <a href="mailto:hallo@handgemacht-studio.de">hallo@handgemacht-studio.de</a>
+            </div>
+            <div class="site-footer__contact-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              <a href="tel:+497611234567">+49 761 1234 567</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div>© 2026 Handgemacht Studio · Baden-Württemberg</div>
+        <div class="site-footer__bottom-links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main><!-- /.page -->
+
+<script src="scripts/site.js"></script>
+<script src="scripts/page-landing.js"></script>
+</body>
+</html>
