@@ -1,9 +1,19 @@
 page = PAGE
 page {
+
     meta{
         viewport = width=device-width, initial-scale=1.0
         description = Kuratierte Handwerk-Abende für Anfänger in Baden-Württemberg. Töpfern, Holz, Lederwerk, Druck und mehr. Du nimmst dein Werk mit nach Hause.
         }
+
+    headerData{
+        10 = TEXT
+        10.value (
+           <link href="{path:EXT:filtgenmaster/Resources/Public/assets/icon-hell.svg}" rel="icon">
+        )
+        10.insertData = 1
+    }
+
      10 = PAGEVIEW
      10 {
           paths {
