@@ -5,40 +5,12 @@
      STICKY HEADER
      ============================================================ -->
 <header class="site-header" id="site-header">
-  <div class="container">
-    <div class="site-header__inner">
-      <a href="index.html" aria-label="Handgemacht Studio · Zur Startseite">
-        <img src="assets/logo-hell.svg" class="site-header__logo" alt="Handgemacht Studio"/>
-      </a>
-      <nav class="site-header__nav" aria-label="Hauptnavigation">
-        <a href="index.html" class="site-header__link site-header__link--active">Start</a>
-        <a href="pages/Events.html" class="site-header__link">Events</a>
-        <a href="pages/Über uns.html" class="site-header__link">Über uns</a>
-        <a href="pages/FAQ.html" class="site-header__link">FAQ</a>
-        <a href="pages/Kontakt.html" class="site-header__link">Kontakt</a>
-      </nav>
-      <a class="site-header__cta" href="pages/Events.html">Events buchen</a>
-      <button class="site-header__burger" id="burger-btn" aria-label="Menü öffnen" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
+
+    <f:render partial="Menu" arguments="{_all}"/> 
+
 </header>
 
-<!-- Mobile drawer — outside .page so overflow-x:clip cannot clip it -->
-<div class="site-header__mobile" id="mobile-menu" aria-hidden="true">
-  <nav class="site-header__mobile-nav" aria-label="Mobile Navigation">
-    <a href="index.html" class="site-header__mobile-link site-header__mobile-link--active">Start</a>
-    <a href="pages/Events.html" class="site-header__mobile-link">Events</a>
-    <a href="pages/Über uns.html" class="site-header__mobile-link">Über uns</a>
-    <a href="pages/FAQ.html" class="site-header__mobile-link">FAQ</a>
-    <a href="pages/Kontakt.html" class="site-header__mobile-link">Kontakt</a>
-    <a class="btn btn--primary site-header__mobile-cta" href="pages/Events.html">
-      Events buchen
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-  </nav>
-</div>
+
 
 <f:render section="MainContent"/>
 
@@ -50,7 +22,7 @@
       <div class="site-footer__top">
         <div class="site-footer__brand">
           <span class="site-footer__lehm"></span>
-          <img src="assets/logo-dunkel.svg" alt="Handgemacht Studio"/>
+          <f:image src="EXT:filtgenmaster/Resources/Public/assets/logo-dunkel.svg" alt="Handgemacht Studio" width="168px"/>
           <p class="site-footer__claim">Das hab ich selbst gemacht.</p>
           <div class="site-footer__social" aria-label="Soziale Netzwerke">
             <a href="#" aria-label="Instagram">

@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+<div class="container">
+    <div class="site-header__inner">
+      <a href="/" aria-label="Handgemacht Studio · Zur Startseite">
+        <f:image src="EXT:filtgenmaster/Resources/Public/assets/logo-hell.svg" class="site-header__logo" alt="Handgemacht Studio"/>
+      </a>
+      <nav class="site-header__nav" aria-label="Hauptnavigation">
+        <f:for each="{mainMenu}" as="item">
+          <f:link.typolink parameter="{item.data.uid}" class="site-header__link {f:if(condition: item.current, then: 'site-header__link--active')}">
+            {item.title}
+          </f:link.typolink> 
+        </f:for>
+      </nav>
+      <a class="site-header__cta" href="pages/Events.html">Events buchen</a>
+      <button class="site-header__burger" id="burger-btn" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+    <!-- Mobile drawer — outside .page so overflow-x:clip cannot clip it -->
+<div class="site-header__mobile" id="mobile-menu" aria-hidden="true">
+  <nav class="site-header__mobile-nav" aria-label="Mobile Navigation">
+    <f:for each="{mainMenu}" as="item">
+          <f:link.typolink parameter="{item.data.uid}" class="site-header__mobile-link {f:if(condition: item.current, then: 'site-header__mobile-link--active')}">
+            {item.title}
+          </f:link.typolink> 
+        </f:for>
+
+    <a class="btn btn--primary site-header__mobile-cta" href="pages/Events.html">
+      Events buchen
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+</div>
+    
+</f:spaceless>
+</html>
