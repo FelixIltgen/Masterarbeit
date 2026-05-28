@@ -1,0 +1,8 @@
+categories:
+  - name: "filtgenmaster"
+    label: "Filtgenmaster"
+
+settings:
+  filtgenmaster.metaMenuUid:
+    label: "Meta-Menü UID"
+    type: "int"
