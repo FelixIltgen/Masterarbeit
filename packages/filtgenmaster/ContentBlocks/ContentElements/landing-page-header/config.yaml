@@ -1,0 +1,52 @@
+name: filtgen/landing-page-header
+typeName: filtgen_landingpageheader
+group: default
+prefixFields: false
+prefixType: full
+fields:
+  - identifier: header
+    label: (Wird nicht im Frontend angezeigt)
+    useExistingField: true
+  - identifier: text_over_header
+    type: Text
+    label: Text über der Überschrift
+  - identifier: header_text_1
+    type: Text
+    label: Überschriftstext_1
+  - identifier: header_text_2
+    type: Text
+    label: Überschriftstext_2
+  - identifier: header_text_3
+    type: Text
+    label: Überschriftstext_3
+  - identifier: text_under_header
+    type: Textarea
+    label: Text unter der Überschrift
+    enableRichtext: true
+    richtextConfiguration: full
+  - identifier: bttn_text_1
+    type: Text
+    label: Button Text 1
+  - identifier: bttn_link_1
+    type: Link
+    label: Button 1 Link
+    allowedTypes:
+      - page
+      - url
+  - identifier: bttn_text_2
+    type: Text
+    label: Button Text 2
+  - identifier: bttn_link_2
+    type: Link
+    label: Button 2 Link
+    allowedTypes:
+      - page
+      - url
+  - identifier: next_event_info
+    type: Text
+    label: Nächster Event Info
+  - identifier: image
+    useExistingField: true
+    type: File
+    extendedPalette: false
+    allowed: common-image-types

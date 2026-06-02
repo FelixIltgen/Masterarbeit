@@ -23,13 +23,13 @@ page {
         page = EXT:filtgenmaster/Resources/Public/scripts/page-landing.js
     }
 
-     10 = PAGEVIEW
-     10 {
-          paths {
-               100 = EXT:filtgenmaster/Resources/Private/Templates/
-          }
+    10 = PAGEVIEW
+    10 {
+        paths{
+            100 = EXT:filtgenmaster/Resources/Private/Templates/
+        }
 
-        variables {
+        variables{
             content0 = CONTENT
             content0 {
                 table = tt_content
@@ -38,8 +38,8 @@ page {
                     orderBy = sorting
                 }
             }
+   
         }
-
-
-     }
+        
+    
 }

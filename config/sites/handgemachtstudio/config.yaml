@@ -1,6 +1,8 @@
 base: 'https://masterarbeit.ddev.site/'
 dependencies:
   - ffiltgen/filtgenmaster
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css
 languages:
   -
     title: Deutsch

@@ -1,0 +1,65 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+    <f:debug>{data}</f:debug>
+ <section class="hero" id="home">
+    <div class="container">
+      <div class="hero__grid">
+
+        <!-- Left — text -->
+        <div class="hero__text">
+          <div class="hero__overline overline">
+            <span class="lehm-line lehm-line--lg"></span>
+            {data.text_over_header}
+          </div>
+          <h1 class="hero__title">
+            
+            {data.header_text_1} <em>{data.header_text_2}</em><br>{data.header_text_3}
+          </h1>
+          <p class="hero__sub">
+            Kuratierte Handwerk-Abende für Anfänger. Du kommst nach der Arbeit, arbeitest mit echten Materialien an erfahrenen Werkbänken und nimmst dein Werk mit nach Hause. Mehr nicht.
+          </p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="pages/Events.html">
+              {data.bttn_text_1}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button class="btn btn--secondary" id="scroll-to-versprechen">{data.bttn_text_2}</button>
+            <span class="meta">
+              <span class="dot"></span>
+              {data.next_event_info}
+            </span> 
+          </div>
+        </div>
+
+        <!-- Right — visual -->
+        <div class="hero__visual">
+          <img src="{f:uri.image(image: data.image.0)}" alt="Handgemacht Studio Monogramm" class="hero__visual-icon"/>
+        </div>
+
+      </div>
+
+      <!-- Stat strip -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="n"><em>6</em> Events</div>
+          <div class="t">Diesen Monat</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n"><em>2</em> Standorte</div>
+          <div class="t">Freiburg &amp; Herbolzheim</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n">Max <em>8</em></div>
+          <div class="t">Personen pro Event</div>
+        </div>
+        <div class="hero__stat">
+          <div class="n">100&thinsp;%</div>
+          <div class="t">Material inklusive</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>
