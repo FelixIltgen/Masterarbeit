@@ -37,7 +37,8 @@
         "typo3/cms-webhooks": "^13.4",
         "typo3/cms-workspaces": "^13.4",
         "typo3/minimal": "^13",
-        "filtgen/filtgenmaster": "@dev"
+        "filtgen/filtgenmaster": "@dev",
+        "friendsoftypo3/content-blocks": "^1.6"
     },
     "config": {
         "allow-plugins": {
