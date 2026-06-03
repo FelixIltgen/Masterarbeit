@@ -1,0 +1,55 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+ <section class="section" id="studio">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Left — text -->
+        <div>
+          <div class="overline about__overline">
+            <span class="lehm-line"></span>
+            Über Handgemacht Studio
+          </div>
+          <h2 class="about__title">Eine Werkstatt, kein Workshop.</h2>
+          <p class="about__sub">
+            Gegründet 2024 in Freiburg — heute mit Werkstätten in Freiburg und Herbolzheim. Wir sind keine Volkshochschule und kein Designstudio. Wir sind das, was dazwischen fehlt.
+          </p>
+          <p class="about__info">
+            Jeder Event wird von einer erfahrenen Handwerkerin oder einem Handwerker begleitet. Wir wählen die Materialien selbst aus — regional, hochwertig, unaufgeregt. Der Raum ist klein gehalten, damit jeder gesehen wird. Am Ende des Abends nimmst du etwas mit, das du am nächsten Morgen noch ansehen kannst.
+          </p>
+          <div class="about__signoff">
+            <span class="lehm-line"></span>
+            <span>Mona &amp; das Studio-Team</span>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <f:link.typolink class="btn btn--primary" parameter="{data.bttn_link_1}">
+              Studios entdecken
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </f:link.typolink>
+          </div>
+        </div>
+
+        <!-- Right — visual + floating card -->
+        <div style="position:relative">
+          <div class="about__visual" aria-label="Werkstatt-Detail">
+            <div class="about__visual-inner"></div>
+            <div class="about__visual-tag">
+              <p class="where">Werkhof am Bach</p>
+              <p class="who">Herbolzheim · Holzwerkstatt</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="n">2</div>
+            <div class="t">Werkstätten in BW</div>
+            <div class="b">Freiburg · Herbolzheim</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</html>

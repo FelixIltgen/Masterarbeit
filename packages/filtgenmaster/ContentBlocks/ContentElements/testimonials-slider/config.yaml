@@ -1,0 +1,9 @@
+name: filtgen/testimonials-slider
+typeName: filtgen_testimonialsslider
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

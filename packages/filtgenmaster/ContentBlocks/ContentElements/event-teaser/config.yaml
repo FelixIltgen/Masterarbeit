@@ -1,0 +1,14 @@
+name: filtgen/event-teaser
+typeName: filtgen_eventteaser
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: bttn_link_1
+    type: Link
+    label: Button 1 Link
+    allowedTypes:
+      - page
+      - url
