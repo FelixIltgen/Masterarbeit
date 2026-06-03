@@ -402,7 +402,6 @@ p, .body {
   text-transform: uppercase;
   color: var(--fg-2);
 }
-
 .label, .ui {
   font-family: var(--font-sans);
   font-weight: 500;

@@ -1,0 +1,26 @@
+name: filtgen/subpage-header
+typeName: filtgen_subpageheader
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+    label: (Wird nicht im Frontend angezeigt)
+  - identifier: text_over_header
+    type: Text
+    label: Text über der Überschrift
+    enableRichtext: true
+  - identifier: text_over_header2
+    type: Text
+    label: Text über der Überschrift 2
+    enableRichtext: true
+    richtextConfiguration: full
+  - identifier: header_text_1
+    type: Text
+    label: Überschriftstext
+  - identifier: text_under_header
+    type: Text
+    label: Text unter der Überschrift
+    enableRichtext: true
+    richtextConfiguration: full
