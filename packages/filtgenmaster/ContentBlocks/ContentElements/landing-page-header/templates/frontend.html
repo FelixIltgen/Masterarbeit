@@ -3,7 +3,7 @@
     xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
     data-namespace-typo3-fluid="true"
 >
-    <f:debug>{data}</f:debug>
+<f:debug>{data}</f:debug>
  <section class="hero" id="home">
     <div class="container">
       <div class="hero__grid">
@@ -22,12 +22,14 @@
             Kuratierte Handwerk-Abende für Anfänger. Du kommst nach der Arbeit, arbeitest mit echten Materialien an erfahrenen Werkbänken und nimmst dein Werk mit nach Hause. Mehr nicht.
           </p>
           <div class="hero__ctas">
-            <a class="btn btn--primary" href="pages/Events.html">
+            <f:link.typolink class="btn btn--primary" parameter="{data.bttn_link_1}">
               {data.bttn_text_1}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <button class="btn btn--secondary" id="scroll-to-versprechen">{data.bttn_text_2}</button>
-            <span class="meta">
+            </f:link.typolink>
+            <f:link.typolink class="btn btn--secondary" parameter="{data.bttn_link_2}">
+              {data.bttn_text_2}
+            </f:link.typolink>
+            <span class="meta"> 
               <span class="dot"></span>
               {data.next_event_info}
             </span> 
