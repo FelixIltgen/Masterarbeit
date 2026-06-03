@@ -4,6 +4,11 @@ group: default
 prefixFields: true
 prefixType: full
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
+  - identifier: bttn_link_1
+    type: Link
+    label: Button 1 Link
+    allowedTypes:
+      - page
+      - url

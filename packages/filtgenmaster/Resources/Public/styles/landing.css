@@ -183,6 +183,12 @@ a { color: inherit; text-decoration: none; }
 }
 .btn--light:hover { background: var(--hg-lehm); color: var(--hg-off-white); }
 
+.btn-new-style{
+  align-self:flex-start;
+  margin-top:6px;
+}
+
+
 /* ============================================================
    HERO (Section 1)
    ============================================================ */
