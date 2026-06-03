@@ -38,6 +38,8 @@ page {
                     orderBy = sorting
                 }
             }
+            content1 < .content0
+            content1.select.where = {#colPos} = 1
    
         }
         
