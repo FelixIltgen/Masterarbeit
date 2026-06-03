@@ -1,0 +1,9 @@
+name: filtgen/about-section-big
+typeName: filtgen_aboutsectionbig
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

@@ -7,6 +7,9 @@ fields:
   - identifier: header
     useExistingField: true
     label: (Wird nicht im Frontend angezeigt)
+  - identifier: checkbox
+    type: Checkbox
+    label: Text nutzt &-Zeichen
   - identifier: text_over_header
     type: Text
     label: Text über der Überschrift

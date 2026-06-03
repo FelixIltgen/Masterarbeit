@@ -1,0 +1,28 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<section class="about-page__cta">
+    <div class="container">
+      <div class="about-page__cta-inner">
+        <div class="overline" style="justify-content:center">
+          <span class="lehm-line"></span>
+          Bereit?
+          <span class="lehm-line"></span>
+        </div>
+        <h2>Komm vorbei und mach etwas Eigenes.</h2>
+        <p>Such dir einen Event aus oder schreib uns, wenn du etwas Bestimmtes vorhast. Wir freuen uns auf dich.</p>
+        <div class="about-page__cta-buttons">
+            <f:link.typolink class="btn btn--primary" parameter="{data.bttn_link_1}">
+                {data.bttn_text_1}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </f:link.typolink>
+          
+          <f:link.typolink class="btn btn--secondary" parameter="{data.bttn_link_2}">{data.bttn_text_2}</f:link.typolink>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>

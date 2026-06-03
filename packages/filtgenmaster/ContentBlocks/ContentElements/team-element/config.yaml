@@ -1,0 +1,9 @@
+name: filtgen/team-element
+typeName: filtgen_teamelement
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true

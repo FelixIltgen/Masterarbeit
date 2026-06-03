@@ -1,0 +1,26 @@
+name: filtgen/cta-section
+typeName: filtgen_ctasection
+group: default
+prefixFields: false
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: bttn_text_1
+    type: Text
+    label: Button Text 1
+  - identifier: bttn_link_1
+    type: Link
+    label: Button 1 Link
+    allowedTypes:
+      - page
+      - url
+  - identifier: bttn_text_2
+    type: Text
+    label: Button Text 2
+  - identifier: bttn_link_2
+    type: Link
+    label: Button 2 Link
+    allowedTypes:
+      - page
+      - url
