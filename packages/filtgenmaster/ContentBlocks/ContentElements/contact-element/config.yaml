@@ -1,0 +1,9 @@
+name: filtgen/contact-element
+typeName: filtgen_contactelement
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
