@@ -5,12 +5,12 @@
      EVENTS DATA
      ============================================================ */
   window.EVENTS = [
-    { id: 1, title: 'Töpfern für Anfänger', category: 'Töpferwerk', city: 'Freiburg', date: 'Sa, 14. Juni', time: '18:00', location: 'Werkstatt Lehmweg 4', spots: 8, left: 3, level: 'Anfänger', price: 68, desc: 'Du arbeitest an der Scheibe und formst eine eigene Schale aus Steinzeug-Ton.', media: 'ton', badge: 'Neu' },
-    { id: 2, title: 'Linoldruck-Abend', category: 'Druckwerk', city: 'Herbolzheim', date: 'Mi, 18. Juni', time: '19:00', location: 'Werkhof am Bach', spots: 8, left: 5, level: 'Anfänger', price: 54, desc: 'Eigenes Motiv schneiden, drucken — drei Karten plus ein A4-Print zum Mitnehmen.', media: 'lino' },
-    { id: 3, title: 'Holzlöffel schnitzen', category: 'Holzwerk', city: 'Herbolzheim', date: 'Sa, 21. Juni', time: '14:00', location: 'Scheune im Hinterhof', spots: 6, left: 2, level: 'Anfänger', price: 72, desc: 'Aus einem rohen Stück Kirschholz schnitzt du deinen eigenen Esslöffel.', media: 'holz', badge: 'Nur 2 Plätze' },
-    { id: 4, title: 'Makramee · Wandbehang', category: 'Knüpfwerk', city: 'Freiburg', date: 'So, 22. Juni', time: '11:00', location: 'Studio Marktstraße 12', spots: 8, left: 6, level: 'Anfänger', price: 48, desc: 'Du knüpfst einen 60-cm-Wandbehang aus Naturbaumwolle — Holzstange inklusive.', media: 'makra' },
-    { id: 5, title: 'Lederwerk · Geldbeutel', category: 'Lederwerk', city: 'Herbolzheim', date: 'Sa, 28. Juni', time: '15:00', location: 'Sattlerei am Bach', spots: 6, left: 1, level: 'Leicht fortgeschritten', price: 89, desc: 'Pflanzlich gegerbtes Rindsleder, von Hand vernäht — dein eigener Geldbeutel.', media: 'leder', badge: 'Nur 1 Platz' },
-    { id: 6, title: 'Silberring schmieden', category: 'Schmuck', city: 'Freiburg', date: 'Fr, 4. Juli', time: '18:30', location: 'Goldschmiede Altstadt', spots: 4, left: 4, level: 'Anfänger', price: 95, desc: 'Aus Silberdraht formst, lötest und polierst du deinen eigenen Ring.', media: 'silber', badge: 'Neu' }
+    { id: 1, title: 'Töpfern für Anfänger', category: 'Töpferwerk', city: 'Freiburg', date: 'Sa, 14. Juni', time: '18:00', location: 'Werkstatt Lehmweg 4', spots: 8, left: 3, level: 'Anfänger', price: 68, desc: 'Du arbeitest an der Scheibe und formst eine eigene Schale aus Steinzeug-Ton.', media: 'ton', badge: 'Neu', link: 'https://masterarbeit.ddev.site/toepfern-fuer-anfaenger'},
+    { id: 2, title: 'Linoldruck-Abend', category: 'Druckwerk', city: 'Herbolzheim', date: 'Mi, 18. Juni', time: '19:00', location: 'Werkhof am Bach', spots: 8, left: 5, level: 'Anfänger', price: 54, desc: 'Eigenes Motiv schneiden, drucken — drei Karten plus ein A4-Print zum Mitnehmen.', media: 'lino', link: 'https://masterarbeit.ddev.site/linoldruck-abend' },
+    { id: 3, title: 'Holzlöffel schnitzen', category: 'Holzwerk', city: 'Herbolzheim', date: 'Sa, 21. Juni', time: '14:00', location: 'Scheune im Hinterhof', spots: 6, left: 2, level: 'Anfänger', price: 72, desc: 'Aus einem rohen Stück Kirschholz schnitzt du deinen eigenen Esslöffel.', media: 'holz', badge: 'Nur 2 Plätze', link: 'https://masterarbeit.ddev.site/holzloeffel-schnitzen' },
+    { id: 4, title: 'Makramee · Wandbehang', category: 'Knüpfwerk', city: 'Freiburg', date: 'So, 22. Juni', time: '11:00', location: 'Studio Marktstraße 12', spots: 8, left: 6, level: 'Anfänger', price: 48, desc: 'Du knüpfst einen 60-cm-Wandbehang aus Naturbaumwolle — Holzstange inklusive.', media: 'makra', link: 'https://masterarbeit.ddev.site//aperol-kerze-herstellen' },
+    { id: 5, title: 'Lederwerk · Geldbeutel', category: 'Lederwerk', city: 'Herbolzheim', date: 'Sa, 28. Juni', time: '15:00', location: 'Sattlerei am Bach', spots: 6, left: 1, level: 'Leicht fortgeschritten', price: 89, desc: 'Pflanzlich gegerbtes Rindsleder, von Hand vernäht — dein eigener Geldbeutel.', media: 'leder', badge: 'Nur 1 Platz', link: 'https://masterarbeit.ddev.site/toepfern-fuer-fortgeschrittene' },
+    { id: 6, title: 'Silberring schmieden', category: 'Schmuck', city: 'Freiburg', date: 'Fr, 4. Juli', time: '18:30', location: 'Goldschmiede Altstadt', spots: 4, left: 4, level: 'Anfänger', price: 95, desc: 'Aus Silberdraht formst, lötest und polierst du deinen eigenen Ring.', media: 'silber', badge: 'Neu', link: 'https://masterarbeit.ddev.site/silberring-schmieden' }
   ];
 
   /* ============================================================
@@ -45,7 +45,7 @@
     basePath = basePath || '';
     var badgeClass = /Nur \d+ Pl/.test(ev.badge || '') ? 'teaser__badge--soft' : ev.badge === 'Neu' ? 'teaser__badge--accent' : '';
     var badge = ev.badge ? '<span class="teaser__badge ' + badgeClass + '">' + ev.badge + '</span>' : '';
-    return '<a class="teaser" href="' + basePath + 'pages/Event Detail.html?id=' + ev.id + '" aria-label="' + ev.title + ' – Details ansehen">' +
+    return '<a class="teaser" href="' + ev.link + '" aria-label="' + ev.title + ' – Details ansehen">' +
       '<div class="teaser__media teaser__media--' + ev.media + ' teaser__media--noise">' +
         badge +
         '<div class="teaser__price">' + ev.price + ' €<small>&nbsp;p.P.</small></div>' +

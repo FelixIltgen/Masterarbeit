@@ -1,0 +1,18 @@
+categories:
+  filtgenmaster:
+    label: "Filtgen site settings"
+  mainNavigation:
+    parent: filtgenmaster
+    label: "Main navigation settings"
+
+settings:
+  filtgenmaster.mainMenu.ButtonText:
+    category: mainNavigation
+    label: "Main Menu Button Text"
+    type: string
+    default: ""
+  filtgenmaster.mainMenu.ButtonLink:
+    category: mainNavigation
+    label: "Main Menu Button Link"
+    type: string
+    default: ""
