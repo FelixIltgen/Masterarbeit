@@ -7,3 +7,7 @@ fields:
   -
     identifier: header
     useExistingField: true
+  - identifier: image
+    label: Teaser Bild des Events
+    type: File
+    extendedPalette: false

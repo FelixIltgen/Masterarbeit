@@ -1,19 +1,35 @@
-<html
-    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
-    data-namespace-typo3-fluid="true"
->
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers" data-namespace-typo3-fluid="true">
 <!-- Team -->
-  <section class="about-page__team">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-head__left">
-          <div class="overline section-head__overline"><span class="lehm-line"></span> Das Studio-Team</div>
-          <h2 class="section-head__title">Die Menschen hinter den Events.</h2>
-          <p class="section-head__sub">Klein, eingespielt und jede mit einem eigenen Handwerk im Hintergrund.</p>
-        </div>
+<section class="about-page__team">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__left">
+        <div class="overline section-head__overline"><span class="lehm-line"></span> Das Studio-Team</div>
+        <h2 class="section-head__title">Die Menschen hinter den Events.</h2>
+        <p class="section-head__sub">Klein, eingespielt und jede mit einem eigenen Handwerk im Hintergrund.</p>
       </div>
-      <div class="team-grid" id="team-grid"></div>
     </div>
-  </section>
+    <div class="team-grid" id="team-grid">
+      <f:for each="{data.teamMembers}" as="member">
+
+        <article class="team-member">
+        <div class="team-member__photo">
+          <img src="{f:uri.image(image: member.image.0)}" alt="{event.title}"/>
+        </div>
+        <div class="team-member__role">
+          <span class="lehm-line lehm-line--sm"></span>
+          {member.title}
+        </div>
+        <h3 class="team-member__name">{member.person_name}</h3>
+        <p class="team-member__body">{member.person_discription}</p>
+      </article>
+        
+      </f:for>
+      
+
+    </div>
+  </div>
+</section>
+
 </html>

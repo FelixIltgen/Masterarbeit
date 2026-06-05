@@ -1,9 +1,29 @@
 name: filtgen/team-element
 typeName: filtgen_teamelement
 group: default
-prefixFields: true
+prefixFields: false
 prefixType: full
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
+  - identifier: teamMembers
+    type: Collection
+    labellfield: title
+    appearance:
+      collapseAll: true
+      levelLinksPosition: both
+    fields:
+      - identifier: title
+        type: Text
+        label: Name der Person
+      - identifier: image
+        label: Bild der Person
+        type: File
+        extendedPalette: false
+        allowed: common-image-types
+      - identifier: person_beruf
+        label: Stelle der Person
+        type: Text
+      - identifier: person_discription
+        label: Kurze beschreibung der Person
+        type: Text

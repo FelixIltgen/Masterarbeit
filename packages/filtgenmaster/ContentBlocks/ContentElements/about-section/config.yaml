@@ -12,3 +12,7 @@ fields:
     allowedTypes:
       - page
       - url
+  - identifier: image
+    label: Teaser Bild des Events
+    type: File
+    extendedPalette: false
