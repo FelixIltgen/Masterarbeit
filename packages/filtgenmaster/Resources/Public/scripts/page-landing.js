@@ -4,15 +4,6 @@ document.getElementById('scroll-to-versprechen')?.addEventListener('click', func
   document.getElementById('versprechen')?.scrollIntoView({ behavior: 'smooth' });
 });
 
-/* Render first 3 event teasers */
-(function () {
-  var grid = document.getElementById('landing-events');
-  if (!grid) return;
-  EVENTS.slice(0, 3).forEach(function (ev) {
-    grid.insertAdjacentHTML('beforeend', renderEventTeaser(ev, ''));
-  });
-})();
-
 /* Testimonials carousel */
 (function () {
   var TESTIMONIALS = [
