@@ -19,9 +19,9 @@ page {
     }
 
     includeJSFooter{
-        #site = EXT:filtgenmaster/Resources/Public/scripts/site.js
+        site = EXT:filtgenmaster/Resources/Public/scripts/site.js
         page = EXT:filtgenmaster/Resources/Public/scripts/page-landing.js
-        #event = EXT:filtgenmaster/Resources/Public/scripts/page-events.js
+        event = EXT:filtgenmaster/Resources/Public/scripts/page-events.js
         eventDetail = EXT:filtgenmaster/Resources/Public/scripts/page-event-detail.js
         faq = EXT:filtgenmaster/Resources/Public/scripts/page-faq.js
         kontakt = EXT:filtgenmaster/Resources/Public/scripts/page-kontakt.js
