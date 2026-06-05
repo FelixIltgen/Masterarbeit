@@ -415,7 +415,6 @@ p, .body {
   font-weight: 400;
   font-size: var(--fs-micro);
   line-height: 1.4;
-  color: var(--fg-2);
 }
 
 /* The signature Lehm line element */
