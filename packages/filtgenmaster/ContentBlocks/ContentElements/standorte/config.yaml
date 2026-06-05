@@ -1,9 +1,18 @@
 name: filtgen/standorte
 typeName: filtgen_standorte
 group: default
-prefixFields: true
+prefixFields: false
 prefixType: full
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
+  - identifier: image
+    label: Standort links
+    type: File
+    extendedPalette: false
+    allowed: common-image-types
+  - identifier: image_2
+    label: Standort rechts
+    type: File
+    extendedPalette: false
+    allowed: common-image-types
