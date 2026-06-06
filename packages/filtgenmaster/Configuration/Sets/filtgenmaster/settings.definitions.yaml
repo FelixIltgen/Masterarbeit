@@ -4,7 +4,7 @@ categories:
   mainNavigation:
     parent: filtgenmaster
     label: "Main navigation settings"
-
+  
 settings:
   filtgenmaster.mainMenu.ButtonText:
     category: mainNavigation

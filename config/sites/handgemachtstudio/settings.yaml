@@ -1,2 +1,4 @@
 filtgenmaster.mainMenu.ButtonText: 'Events buchen'
 filtgenmaster.mainMenu.ButtonLink: 'https://masterarbeit.ddev.site/events'
+filtgenmaster.eventPageBack: 'https://masterarbeit.ddev.site/events'
+filtgenmaster.eventPageForward: 'https://masterarbeit.ddev.site/kontakt'

@@ -8,6 +8,13 @@ fields:
     label: Header
     description: Wird nicht angezeigt, sondern nur für die interne Sortierung der Events verwendet.
     useExistingField: true
+  - identifier: link_back
+    type: Link
+    label: Link zurück zur Event Liste
+    allowedTypes:
+      - page
+      - url
+    required: true
   - identifier: event_place
     type: Text
     label: Ort des Events
@@ -74,6 +81,13 @@ fields:
         value: "Fortgeschritten"
       - label: 'Erfahren'
         value: "Erfahren"
+  - identifier: link_2
+    type: Link
+    label: Link zum Event buchen
+    allowedTypes:
+      - page
+      - url
+    required: true
         
   
 

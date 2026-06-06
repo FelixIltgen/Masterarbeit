@@ -9,19 +9,19 @@ document.getElementById('scroll-to-versprechen')?.addEventListener('click', func
   var TESTIMONIALS = [
     {
       quote: 'Ich dachte, ich kann das nicht. Jetzt steht meine Vase im Wohnzimmer und alle fragen, wo ich sie gekauft habe.',
-      name: 'Sandra K.', meta: '34 · Freiburg · Töpfern'
+      name: 'Sandra K.', meta: '34 · Töpfern'
     },
     {
-      quote: 'Wir waren zu sechst. Es war kein Restaurantabend — es war besser. Jeder hatte am Ende etwas Eigenes in der Hand.',
-      name: 'Lena B.', meta: '28 · Herbolzheim · Linoldruck'
+      quote: 'Wir waren zu fünft als Freundinnen da und haben mehr gelacht als erwartet. Am Ende hatte jede etwas Eigenes in der Hand. Viel schöner als nur wieder essen zu gehen.',
+      name: 'Lena B.', meta: '28 · Linoldruck'
     },
     {
-      quote: 'Das Holz hat sich angefühlt wie Therapie nach der Schicht. Ich komme wieder — diesmal mit meiner Tochter.',
-      name: 'Markus W.', meta: '42 · Herbolzheim · Holzlöffel'
+      quote: 'Ich hab mir Holzarbeiten jahrelang nur auf YouTube angeschaut. Hier durfte ich endlich selbst ran. Genau das hat mir gefehlt. Ich komme wieder!',
+      name: 'Markus W.', meta: '42 · Holzlöffel'
     },
     {
-      quote: 'Endlich mal ein Abend, an dem ich nicht aufs Handy geschaut habe. Drei Stunden — und mein Geldbeutel ist fertig.',
-      name: 'Julia M.', meta: '26 · Freiburg · Lederwerk'
+      quote: 'Klein, persönlich, gut organisiert. Man merkt, dass hier jemand mit Herz dabei ist.',
+      name: 'Julia M.', meta: '26 · Silberring'
     }
   ];
 
