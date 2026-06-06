@@ -1,0 +1,121 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers" data-namespace-typo3-fluid="true">
+<section class="event-detail__hero subpage-hero">
+    <div class="container">
+        <a class="event-detail__back" href="Events.html">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M11 6l-6 6 6 6"></path>
+            </svg>
+            Zurück zu allen Events
+        </a>
+        <div class="overline event-detail__overline">
+            <span class="lehm-line lehm-line--lg"></span>
+            <span id="ev-category-city">{data.event_place}</span>
+        </div>
+        <h1 class="event-detail__title" id="ev-title">{data.title}</h1>
+        <p class="event-detail__sub" id="ev-sub">
+            <f:format.date date="{data.event_date}" pattern="EEEEEE d. MMM' · 'HH:mm 'Uhr'" locale="de-DE" />
+            · {data.event_street_location}
+        </p>
+    </div>
+</section>
+
+<section class="event-detail__media-wrap">
+    <div class="container">
+
+        <figure class="event-detail__media teaser__media--ton teaser__media--noise" id="ev-media">
+            <img src="{f:uri.image(image: data.image.0)}" alt="{event.title}" />
+            <span class="event-detail__media-label" id="ev-media-label">{data.event_bage}</span>
+        </figure>
+    </div>
+</section>
+<section class="event-detail__body">
+    <div class="container">
+        <div class="event-detail__grid">
+
+            <!-- Prose -->
+            <article class="event-detail__prose">
+                <div class="overline" style="margin-bottom:18px">
+                    <span class="lehm-line"></span>
+                    Über dieses Event
+                </div>
+                <h2 class="event-detail__h2">{data.second_heading}</h2>
+
+                <p class="event-detail__lead" id="ev-lead">{data.event_small_description}</p>
+                <f:format.html>{data.event_description}</f:format.html>
+
+                <div class="event-detail__includes">
+                    <h3>Im Preis enthalten</h3>
+                    <ul>
+                        <f:for each="{data.benefits}" as="benefit">
+                            <li>{benefit.title}</li>
+                        </f:for>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Booking sidebar -->
+            <aside class="event-detail__side">
+                <div class="event-detail__card">
+                    <div class="event-detail__price">
+                        <span class="event-detail__price-num" id="ev-price">{data.event_price}</span>
+                        <span class="event-detail__price-unit">pro Person</span>
+                    </div>
+                    <ul class="event-detail__facts">
+                        <li>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                style="color:var(--hg-lehm)">
+                                <rect x="3" y="5" width="18" height="16" rx="1.5"></rect>
+                                <path d="M3 9h18"></path>
+                                <path d="M8 3v4M16 3v4"></path>
+                            </svg>
+                            <span>
+                                <strong id="ev-date">
+                                    <f:format.date date="{data.event_date}" pattern="EEEEEE, d. MMM" locale="de-DE" />
+                                </strong><br><span id="ev-time-dur">
+                                    <f:format.date date="{data.event_date}" pattern="HH:mm 'Uhr'" locale="de-DE" /> ·
+                                    ca. {data.event_duration}
+                                </span></span>
+                        </li>
+                        <li>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                style="color:var(--hg-lehm)">
+                                <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path>
+                                <circle cx="12" cy="10" r="2.5"></circle>
+                            </svg>
+                            <span><strong id="ev-location">{data.event_street_location}</strong><br><span
+                                    id="ev-city">{data.event_place}</span></span>
+                        </li>
+                        <li>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                style="color:var(--hg-lehm)">
+                                <circle cx="9" cy="8" r="3.2"></circle>
+                                <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                                <path d="M15.5 14.5A4.5 4.5 0 0 1 21 19"></path>
+                                <circle cx="17" cy="8" r="2.6"></circle>
+                            </svg>
+                            <span><strong id="ev-availability">{data.places_left} von {data.places_max} Plätzen frei</strong><br>Level: <span
+                                    id="ev-level">{data.select_exp}</span></span>
+                        </li>
+                    </ul>
+                    <a class="btn btn--primary event-detail__cta" href="Kontakt.html">
+                        Platz buchen
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6"></path>
+                        </svg>
+                    </a>
+                    <p class="event-detail__note">Bestätigung &amp; Rechnung kommen direkt per E-Mail. Stornierung bis 7
+                        Tage vorher kostenfrei.</p>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</section>
+
+</html>

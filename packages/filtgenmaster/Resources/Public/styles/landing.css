@@ -1575,7 +1575,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 22px; max-width: 18ch; text-wrap: balance;
 }
 .event-detail__sub {
-  font-family: var(--font-sans); font-weight: 300;
+  font-family: var(--font-sans); font-weight: 400;
   font-size: 18px; line-height: 1.55; color: var(--fg-2);
   margin: 0; max-width: 60ch;
 }
@@ -1617,20 +1617,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* prose column */
-.event-detail__prose { max-width: 64ch; }
+.event-detail__prose { max-width: 80ch; }
 .event-detail__h2 {
   font-family: var(--font-serif); font-weight: 400;
   font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15;
   color: var(--hg-anthrazit);
   margin: 0 0 20px; text-wrap: balance;
 }
-.event-detail__lead {
-  font-family: var(--font-sans); font-weight: 300;
+#ev-lead {
+  font-family: var(--font-sans); font-weight: 370;
   font-size: 19px; line-height: 1.55; color: var(--fg-1);
   margin: 0 0 28px;
 }
-.event-detail__p {
-  font-family: var(--font-sans); font-weight: 300;
+.event-detail__prose p {
+  font-family: var(--font-sans); font-weight: 350;
   font-size: 16px; line-height: 1.7; color: var(--fg-2);
   margin: 0 0 18px;
   text-wrap: pretty;
@@ -1651,7 +1651,7 @@ a { color: inherit; text-decoration: none; }
   display: grid; gap: 8px;
 }
 .event-detail__includes li {
-  font-family: var(--font-sans); font-weight: 300;
+  font-family: var(--font-sans); font-weight: 350;
   font-size: 15px; line-height: 1.55; color: var(--fg-2);
   padding-left: 18px; position: relative;
 }

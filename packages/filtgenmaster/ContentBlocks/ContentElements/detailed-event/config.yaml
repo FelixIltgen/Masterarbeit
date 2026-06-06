@@ -1,0 +1,80 @@
+name: filtgen/detailed-event
+typeName: filtgen_detailedevent
+group: default
+prefixFields: false
+prefixType: full
+fields:
+  - identifier: header 
+    label: Header
+    description: Wird nicht angezeigt, sondern nur für die interne Sortierung der Events verwendet.
+    useExistingField: true
+  - identifier: event_place
+    type: Text
+    label: Ort des Events
+  - identifier: title
+    type: Text
+    label: Titel des Events
+  - identifier: event_date
+    type: DateTime
+    label: Datum des Events
+    format: datetime
+    dbType: datetime
+  - identifier: event_street_location
+    type: Text
+  - identifier: image
+    label: Teaser Bild des Events
+    type: File
+    extendedPalette: false
+    allowed: common-image-types
+  - identifier: event_bage
+    label: Bage im Teaserbild
+    type: Text
+  - identifier: second_heading
+    type: Text
+    label: Sekundäre Überschrift
+  - identifier: event_small_description
+    type: Text
+    label: Kurze Beschreibung des Events
+  - identifier: event_description
+    type: Textarea
+    enableRichtext: true
+    richtextConfiguration: full
+    label: Beschreibung des Events
+  - identifier: benefits
+    type: Collection
+    label: Zähle hier alle Benefits des Events einzeln auf.
+    labellfield: title
+    appearance:
+      collapseAll: true
+      levelLinksPosition: both
+    fields:
+      - identifier: title
+        type: Text
+        label: Benefit
+  - identifier: event_duration
+    type: Text
+    label: Dauer des Events 
+  - identifier: event_price
+    type: Text
+    label: Preis des Events
+  - identifier: places_left
+    label: Wie viele Plätze sind noch zu haben
+    type: Text
+  - identifier: places_max
+    label: Maximale Platzanzahl
+    type: Text
+  - identifier: select_exp
+    type: Select
+    renderType: selectSingle
+    default: 'Anfänger'
+    items:
+      - label: 'Anfänger'
+        value: "Anfänger"
+      - label: 'Fortgeschritten'
+        value: "Fortgeschritten"
+      - label: 'Erfahren'
+        value: "Erfahren"
+        
+  
+
+    
