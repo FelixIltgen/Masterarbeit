@@ -1,0 +1,103 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:spaceless>
+
+    <f:section name="MainContent">
+
+        {content0 -> f:format.raw()}
+
+        <section class="section contact-page__section">
+            <div class="container">
+                <div class="contact-page__layout">
+
+                    <!-- Contact form -->
+                    <div id="contact-form-wrap" class="contact-form">
+
+                        <div class="overline contact-form__overline">
+                            <span class="lehm-line"></span>
+                            Schreib uns
+                        </div>
+                        <h2 class="contact-form__title">Nachricht senden.</h2>
+                        <p class="contact-form__sub">
+                            Füll das Formular aus wir melden uns meist innerhalb von 24 Stunden zurück.
+                            Felder mit * sind erforderlich.
+                        </p>
+                        {content1 -> f:format.raw()}
+
+                    </div>
+
+                    <!-- Sidebar -->
+                    {content2 -> f:format.raw()}
+                    <aside class="contact-sidebar">
+                        <div class="contact-card">
+                            <h3>
+                                <span class="lehm-line" style="width:20px"></span>
+                                Direkter Draht
+                            </h3>
+                            <div class="contact-card__row">
+                                <div class="contact-card__row-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <path d="M3 7l9 7 9-7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-card__row-label">E-Mail</div>
+                                    <div class="contact-card__row-value"><a
+                                            href="mailto:hallo@handgemacht-studio.de">hallo@handgemacht-studio.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card__row">
+                                <div class="contact-card__row-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-card__row-label">Telefon</div>
+                                    <div class="contact-card__row-value">
+                                        <a href="tel:+497611234567">+49 761 1234 567</a>
+                                        <div style="font-size:12px;color:var(--fg-2);margin-top:2px">Mo–Fr · 10:00–17:00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card__row">
+                                <div class="contact-card__row-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" />
+                                        <circle cx="12" cy="10" r="2.5" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-card__row-label">Werkstätten</div>
+                                    <div class="contact-card__row-value">
+                                        Lehmweg 4 · 79098 Freiburg<br>
+                                        Werkhof am Bach · 79336 Herbolzheim
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card contact-card--dark">
+                            <span class="lehm-line" style="display:block;margin-bottom:14px"></span>
+                            <p class="contact-card__quote">„Wir lesen jede Nachricht. Keine Bots, keine Auto-Reply."</p>
+                            <p>Mona &amp; das Studio-Team</p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+    </f:section>
+
+</f:spaceless>
+
+</html>

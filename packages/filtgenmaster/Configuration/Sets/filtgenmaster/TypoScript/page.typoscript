@@ -45,6 +45,8 @@ page {
             }
             content1 < .content0
             content1.select.where = {#colPos} = 1
+            content2 < .content0
+            content2.select.where = {#colPos} = 2
    
         }
         

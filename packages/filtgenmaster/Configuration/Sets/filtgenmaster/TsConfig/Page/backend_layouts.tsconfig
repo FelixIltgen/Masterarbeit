@@ -26,4 +26,36 @@ mod.web_layout.BackendLayouts {
       }
     }
   }
+  contact {
+    title = Kontakt Seite
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Header
+                colspan = 2
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Main
+                colPos = 1
+              }
+              2 {
+                name = Side
+                colPos = 3
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
