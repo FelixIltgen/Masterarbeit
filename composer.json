@@ -38,7 +38,8 @@
         "typo3/cms-workspaces": "^13.4",
         "typo3/minimal": "^13",
         "filtgen/filtgenmaster": "@dev",
-        "friendsoftypo3/content-blocks": "^1.6"
+        "friendsoftypo3/content-blocks": "^1.6",
+        "brotkrueml/schema": "^4.2"
     },
     "config": {
         "allow-plugins": {
