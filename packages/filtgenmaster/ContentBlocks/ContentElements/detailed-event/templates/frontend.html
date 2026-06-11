@@ -1,5 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers" data-namespace-typo3-fluid="true">
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers" data-namespace-typo3-fluid="true"
+    xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:debug>{data}</f:debug>
 <section class="event-detail__hero subpage-hero">
     <div class="container">
         <f:link.typolink class="event-detail__back" parameter="{data.link_back}">
@@ -60,7 +62,7 @@
             <aside class="event-detail__side">
                 <div class="event-detail__card">
                     <div class="event-detail__price">
-                        <span class="event-detail__price-num" id="ev-price">{data.event_price}</span>
+                        <span class="event-detail__price-num" id="ev-price">{data.event_price} €</span>
                         <span class="event-detail__price-unit">pro Person</span>
                     </div>
                     <ul class="event-detail__facts">
@@ -103,7 +105,7 @@
                                     frei</strong><br>Level: <span id="ev-level">{data.select_exp}</span></span>
                         </li>
                     </ul>
-                    
+
                     <f:link.typolink class="btn btn--primary event-detail__cta" parameter="{data.link_2}">
                         Platz buchen
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -111,7 +113,7 @@
                             <path d="M5 12h14M13 6l6 6-6 6"></path>
                         </svg>
                     </f:link.typolink>
-                    
+
                     <p class="event-detail__note">Bestätigung &amp; Rechnung kommen direkt per E-Mail. Stornierung bis 7
                         Tage vorher kostenfrei.</p>
                 </div>
@@ -120,5 +122,53 @@
         </div>
     </div>
 </section>
+<f:if condition="{data.use_structured_data}">
+    <f:then>
+        <schema:type.event 
+                name="{data.title}"
+                eventStatus = "https://schema.org/EventScheduled"
+                >
+                <schema:property -as="image" value="{f:uri.image(image: data.image.0)}"/>
+                
+                <f:variable name="startDate"><f:format.date date="{data.event_date}" pattern="yyyy-MM-dd'T'HH:mm" /></f:variable>
+                <schema:property -as="startDate" value="{startDate}" />
+
+                <f:variable name="description"><f:format.html>{data.event_description}</f:format.html></f:variable>
+                <schema:property -as="description" value="{description}" />
+                
+                <schema:type.place
+                    -as="location"
+                    name="{data.event_place}">
+            
+                <schema:type.postalAddress
+                        -as = "address"
+                        streetAddress = "{data.event_street_location}"
+                        addressLocality = "{data.event_place}"
+                        postalCode = "13546"
+                        addressCountry = "DE"
+                        >
+                </schema:type.postalAddress>
+
+            </schema:type.place>
+            <schema:type.offer
+                    -as = "offers"
+                    price = "{data.event_price}"
+                    priceCurrency = "EUR"
+                    availability = "https://schema.org/InStock"
+                    url="{data.link_offer}"
+            >
+            <schema:property -as="validFrom" value="{startDate}" />
+        </schema:type.offer>
+        <schema:type.Organization
+                -as = "organizer"
+                name = "Handgemacht Studio"
+                url = "{data.link_home}"
+                >
+        </schema:type.Organization>
+
+        </schema:type.event>
+
+    </f:then>
+</f:if>
 
 </html>

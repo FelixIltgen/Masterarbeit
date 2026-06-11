@@ -8,6 +8,10 @@ fields:
     label: Header
     description: Wird nicht angezeigt, sondern nur für die interne Sortierung der Events verwendet.
     useExistingField: true
+  - identifier: use_structured_data
+    label: Daten für Strukturierte Daten ausgabe verwenden
+    description: Wenn aktiviert, werden die eingegebenen Daten genutzt, um die Webseite mit strukturierten Daten anzureichern.
+    type: Checkbox
   - identifier: link_back
     type: Link
     label: Link zurück zur Event Liste
@@ -15,6 +19,12 @@ fields:
       - page
       - url
     required: true
+  - identifier: link_home
+    type: Text
+    label: Link zur Homepage
+  - identifier: link_offer
+    type: Text
+    label: Link zum Event
   - identifier: event_place
     type: Text
     label: Ort des Events
