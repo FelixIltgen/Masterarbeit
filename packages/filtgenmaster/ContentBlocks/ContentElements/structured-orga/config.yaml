@@ -33,9 +33,11 @@ fields:
   - identifier: orga_description
     type: Text
     label: Beschreibung
-  - identifier: orga_founding
-    type: Text
+  - identifier: founding_date
+    type: DateTime
     label: Gründungsdatum
+    format: datetime
+    dbType: datetime
   - identifier: image
     label: Logo der Firma
     type: File
@@ -47,3 +49,6 @@ fields:
   - identifier: orga_url
     type: Text
     label: URL der Organisation
+  - identifier: same_orga
+    type: Text
+    label: URL einer ähnlichen Organisation

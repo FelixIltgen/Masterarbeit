@@ -4,17 +4,17 @@
     data-namespace-typo3-fluid="true"
     xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers" data-namespace-typo3-fluid="true"
 >
-
-<f:debug>{data}</f:debug>
-
 <schema:type.organization
     url ="{data.orga_url}"
-    sameAs = "{data.orga_url}"
+    sameAs = "{data.same_orga}"
     logo = "{f:uri.image(image: data.image.0)}"
     name = "{data.orga_name}"
     description = "{data.orga_description}"
     email = "{data.orga_email}"
+    numberOfEmployees="{data.orga_employees}"
 >
+    <f:variable name="foundingDate"><f:format.date date="{data.founding_date}" pattern="yyyy-MM-dd" /></f:variable>
+    <schema:property -as="foundingDate" value="{foundingDate}" />
     <schema:type.postalAddress
         -as ="address"
         addressCountry = "{data.orga_country}"
@@ -22,11 +22,12 @@
         addressRegion = "{data.orga_state}"
         postalCode = "{data.orga_postal}"
         streetAddress = "{data.orga_street_and_number}"
-
-    >
-
-    </schema:type.postalAddress>
-
+    ></schema:type.postalAddress>
+    <schema:type.contactPoint
+        -as="contactPoint"
+        email = "{data.orga_email}"
+        telephone="{data.orga_tel}"
+    ></schema:type.contactPoint>
 </schema:type.organization>
  
 
