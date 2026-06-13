@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-13T12:43:48+00:00" product-name="filtgen/basic-text">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Einfaches Textelement</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Description for Content Element filtgen/basic-text</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

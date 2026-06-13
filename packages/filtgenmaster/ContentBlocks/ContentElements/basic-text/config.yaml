@@ -1,0 +1,13 @@
+name: filtgen/basic-text
+typeName: filtgen_basictext
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  - identifier: textarea_text
+    type: Textarea
+    enableRichtext: true
+    richtextConfiguration: full

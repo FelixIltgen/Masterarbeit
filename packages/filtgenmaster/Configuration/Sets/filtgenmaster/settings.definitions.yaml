@@ -4,6 +4,9 @@ categories:
   mainNavigation:
     parent: filtgenmaster
     label: "Main navigation settings"
+  footernavigation:
+    parent: filtgenmaster
+    label: "Footer navigation settings"
   
 settings:
   filtgenmaster.mainMenu.ButtonText:
@@ -16,3 +19,15 @@ settings:
     label: "Main Menu Button Link"
     type: string
     default: ""
+  filtgenmaster.impressum.Page:
+    category: footernavigation
+    label: "Link des Impressum buttons"
+    type: string
+    default: ""
+  filtgenmaster.datenschutz.Page:
+    category: footernavigation
+    label: "Link des Datenschutz buttons"
+    type: string
+    default: ""
+  
+  

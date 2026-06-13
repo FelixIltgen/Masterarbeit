@@ -27,3 +27,8 @@ fields:
     label: Text unter der Überschrift
     enableRichtext: true
     richtextConfiguration: full
+  - identifier: textarea_text
+    type: Textarea
+    label: Weitere Inhaltstext
+    enableRichtext: true
+    richtextConfiguration: full
