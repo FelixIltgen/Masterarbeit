@@ -1,0 +1,49 @@
+name: filtgen/structured-orga
+typeName: filtgen_structuredorga
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: orga_country
+    type: Text
+    label: Länderkürzel
+  - identifier: orga_local
+    type: Text
+    label: Ort der Firma
+  - identifier: orga_state
+    type: Text
+    label: Bundesland
+  - identifier: orga_postal
+    type: Text
+    label: Postleitzahl
+  - identifier: orga_name
+    type: Text
+    label: Name der Firma
+  - identifier: orga_street_and_number
+    type: Text
+    label: Straße und Hausnummer
+  - identifier: orga_email
+    type: Text
+    label: Emailadresse
+  - identifier: orga_tel
+    type: Text
+    label: Telefonnummer
+  - identifier: orga_description
+    type: Text
+    label: Beschreibung
+  - identifier: orga_founding
+    type: Text
+    label: Gründungsdatum
+  - identifier: image
+    label: Logo der Firma
+    type: File
+    extendedPalette: false
+    allowed: common-image-types
+  - identifier: orga_employees
+    type: Text
+    label: Anzahl an Angestellten
+  - identifier: orga_url
+    type: Text
+    label: URL der Organisation
