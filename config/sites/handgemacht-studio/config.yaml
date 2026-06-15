@@ -1,0 +1,18 @@
+base: 'https://masterarbeit2.ddev.site/'
+dependencies:
+  - ffiltgen/filtgenmaster
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE.utf8
+    navigationTitle: DE
+    flag: de
+    hreflang: de-DE
+    websiteTitle: 'Handgemacht Studio'
+rootPageId: 24
+websiteTitle: Home
