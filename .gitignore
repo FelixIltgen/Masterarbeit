@@ -8,6 +8,7 @@
 /public/typo3temp/
 /public/_assets/
 /var/
+!/var/labels
 /public/fileadmin/_processed_/
 /public/fileadmin/_temp_/
 
@@ -18,10 +19,10 @@
 
 ### Configuration & Secrets ###
 .env
-/config/system/settings.php
 /config/system/additional.php
 /public/typo3conf/LocalConfiguration.php
 /public/typo3conf/AdditionalConfiguration.php
+
 
 ### IDE & OS ###
 .idea/
@@ -33,3 +34,7 @@ Thumbs.db
 node_modules/
 npm-debug.log
 yarn-error.log
+
+### Database
+database.sql
+db.sql
