@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl -d DDEV -- bash -c \"cd /home/felix/projects/Masterarbeit && cat packages/filtgenmaster/Resources/Public/ContentBlocks/.gitignore 2>&1; ls packages/filtgenmaster/Resources/Public/ContentBlocks/ 2>&1\")"
+    ]
+  }
+}
