@@ -8,6 +8,9 @@ In my master's thesis, I examined the following topic:
 and answered the following research question:
 > To what extent is structured data gaining strategic importance, and in what form does it influence the source attribution of websites in AI-powered search engines?
 
+### Live website
+> You can find the current live version of the website [here](https://www.handgemachtstudio.com/).
+
 Below is the guide for a local DDEV installation.
 ### Prerequisites
 Before you start, make sure the following tools are installed on your system:
