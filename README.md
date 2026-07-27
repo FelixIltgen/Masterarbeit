@@ -102,7 +102,7 @@ From here you can continue with the steps described below — all DDEV and Git c
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone 
 cd your-repo
 ```
 
@@ -131,7 +131,7 @@ ddev composer install
 ```
 
 ### 5. Import the database (if a dump is available)
-
+The corresponding database is available upon request.
 ```bash
 ddev import-db --file=./dump/database.sql.gz
 ```
