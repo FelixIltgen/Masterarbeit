@@ -102,8 +102,8 @@ From here you can continue with the steps described below — all DDEV and Git c
 ### 1. Clone the repository
 
 ```bash
-git clone 
-cd your-repo
+git clone https://github.com/FelixIltgen/Masterarbeit.git
+cd your-folder-name
 ```
 
 ### 2. Configure the DDEV project (if not already set up)
