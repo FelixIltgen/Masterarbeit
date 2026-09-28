@@ -1,0 +1,6 @@
+hosts:
+  production:
+    hostname: 'ssh.lashorst.project.host'
+    remote_user: 'ssh-ry00ef@a-pcty55'
+    port: 22
+    deploy_path: '/home/p-fdaq3i/html/masterarbeit-2/production'
